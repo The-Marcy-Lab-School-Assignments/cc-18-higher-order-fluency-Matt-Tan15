@@ -11,9 +11,7 @@ const noVowel = (arr) => arr.map(word => word.replace(/[aeiou]/gi,'x'));
 // console.log(noVowel(animals));
 
 //question 3
-const longToShort = (arr) => arr.sort(function(a,b) {
-    return b.length - a.length;
-});
+const longToShort = (arr) => arr.sort((a,b) => b.length - a.length);
 // console.log(longToShort(animals));
 
 //question 4
