@@ -7,8 +7,7 @@ const shortWords = (arr) => arr.filter(word => word.length < 5);
 // console.log(shortWords(animals));
 
 //question 2
-const vowels = /[aeiou]/gi;
-const noVowel = (arr) => arr.map(word => word.replace(vowels,'x'));
+const noVowel = (arr) => arr.map(word => word.replace(/[aeiou]/gi,'x'));
 // console.log(noVowel(animals));
 
 //question 3
